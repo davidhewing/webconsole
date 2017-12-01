@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wetty - The WebTTY Terminal Emulator</title>
+    <link rel="stylesheet" href="led.css">
+    <script src="/webconsole/hterm_all.js"></script>
+    <script src="/webconsole/socket.io/socket.io.js"></script>
+    <script src="/webconsole/webconsole.js"></script>
+    <style>
+        html,
+        body {
+            height: 97%;
+            width: 100%;
+            margin: 0px;
+        }
+        #terminal {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="control" class="container">
+	    <div class="led-box" ><p>Power</p>
+		    <div id="Power" class="led-greendark"></div></div>
+	    <div class="led-box"><p>Hard Drive</p>
+		    <div id="HD" class="led-reddark"></div></div>
+	    <div class="led-box"><p><br>
+	     <button onclick="pushpower(1000)">Power 1sec</button><br>
+	     <button onclick="pushpower(10000)">Power 10sec</button></p>
+	    </div>
+	    <div class="led-box">
+	     <p><br><button onclick="pushreset(1000)">Reset</button></p>
+	    </div>
+    </div>
+	<br>
+    <div id="terminal"></div>
+</body>
+
+</html>
