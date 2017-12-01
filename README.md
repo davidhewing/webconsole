@@ -8,6 +8,8 @@ option that GRUB and Linux kernels have, and with a easy to build expansion
 board on a Raspberry PI to read the power/hard drive led activity and relays
 to "push" the reset or power buttons.
 
+![WebConsole](/images/screenshot.png?raw=true)
+
 The software that this is based from include:
 
 wetty https://github.com/krishnasrinivas/wetty - This is a great web ssh
