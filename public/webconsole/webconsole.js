@@ -1,5 +1,5 @@
 var term;
-var socket = io(location.origin, {path: '/wetty/socket.io'})
+var socket = io(location.origin, {path: '/webconsole/socket.io'})
 var buf = '';
 
 function Wetty(argv) {
