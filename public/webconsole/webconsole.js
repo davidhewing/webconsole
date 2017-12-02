@@ -75,10 +75,12 @@ socket.on('hdled', function(value) {
 });
 
 function pushpower(howlong) {
-	socket.emit('pushpower', howlong);
+	if (confirm("Push Power Button\nAre you sure?")==true)
+		socket.emit('pushpower', howlong);
 }
 function pushreset(howlong) {
-	socket.emit('pushreset', howlong);
+	if (confirm("Push Reset Button\nAre you sure?")==true)
+		socket.emit('pushreset', howlong);
 }
 
 
