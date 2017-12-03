@@ -1,0 +1,19 @@
+# systemd unit file
+#
+# place in /etc/systemd/system
+# systemctl enable webconsole.service
+# systemctl start webconsole.service
+
+[Unit]
+Description=WebConsole
+After=network.target
+
+[Service]
+User=root
+Group=root
+
+WorkingDirectory=WEBCONSOLEDIRECTORY 
+ExecStart=WEBCONSOLEDIRECTORY/console.js -p 80 --loginexec console --loginargs console
+
+[Install]
+WantedBy=multi-user.target
