@@ -25,13 +25,22 @@ conserver https://github.com/glance-/conserver - This is a very old project that
 manages serial console sessions including logging activity on the serial line
 even when no one is connected.  
 
-offon nodejs library.  Standard library that provides the base hardware
+onoff nodejs library.  Standard library that provides the base hardware
 interface between nodejs and the PC hardware.
+
+WIKI
+-------
+This Wiki contains more details on the setup of the hardware and the software.
+There is a script that performs most of the software setup that simplies things
+greatly.
+
+https://github.com/davidhewing/webconsole/wiki
+
 
 General Setup
 -------------
 This is a project in progress - the code that exists here is working, but the
-documentation still needs to be completed.  
+documentation still needs to be completed.  See the Wiki for details
 
 The following is not a step by step guide, but general steps.
 
