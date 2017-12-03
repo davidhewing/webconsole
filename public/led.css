@@ -103,9 +103,9 @@
   margin: 0 auto;
   width: 24px;
   height: 24px;
-  background-color: #1B3F00;
+  background-color: #2B8F00;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #103701 0 -1px 9px, #193F00 0 2px 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #104701 0 -1px 9px, #194F00 0 2px 12px;
 }
 
 .led-green {
@@ -126,7 +126,7 @@
 }
 
 .led-red {
-  margin: 0 0 0 0;
+  margin: 0 auto;
   width: 24px;
   height: 24px;
   background-color: #FF0000;
